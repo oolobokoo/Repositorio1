@@ -8,15 +8,18 @@ namespace TestProject {
     class Program {
         static void Main (string[] args) {
 
-            int num = 0;
-            float dec = 1.25f;
-            char letter = 'A';
-            bool truth = false;
-            string word = "Word";
-
-            Auto auto = new Auto();
-            Console.Write ("con " + auto.numeroDePuertas + " puertas ");
-            Console.WriteLine ("y con un motor de " + auto.motor.numCilindros + " cilindros");
+            string secretWord;
+            string showWord = "";
+            secretWord = Console.ReadLine ();
+            Console.Clear ();
+            for (int i = 0; i < secretWord.Length; i++) {
+                if (!(secretWord[i] == ' ')) {
+                    showWord += "*";
+                } else {
+                    showWord += " ";
+                }
+            }
+            Console.WriteLine ("Your secret word is " + showWord);
         }
     }
 }
