@@ -9,6 +9,11 @@ namespace TestProject {
         
         public GuessTest guessTest;
 
-
+        public HangGame () {
+            Console.WriteLine ("Choose your word: ");
+            guessTest = new GuessTest (Console.ReadLine ());
+            Console.Clear ();
+            Console.WriteLine ("Your secret word is " + guessTest.shownWord);
+        }
     }
 }
