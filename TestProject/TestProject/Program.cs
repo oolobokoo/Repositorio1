@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TestProject {
     class Program {
         static void Main (string[] args) {
-
+            //------------------------INITIALIZATION--------------// 
             string secretWord;
             string shownWord = "";
             secretWord = Console.ReadLine ();
@@ -20,12 +20,15 @@ namespace TestProject {
                 }
             }
             Console.WriteLine ("Your secret word is " + shownWord);
+            //----------------------------------------------------// 
 
+            //------------------------UPDATE-&-RENDER-------------// 
             while (!(shownWord == secretWord)) {
                 string charTry;
                 charTry = Console.ReadLine ();
 
-                while (charTry != secretWord || string.IsNullOrWhiteSpace(charTry) || charTry.Length > 1) {
+                while (string.IsNullOrWhiteSpace(charTry) || charTry.Length > 1) {
+                    if (charTry == secretWord) { break; }
                     Console.Clear ();
                     Console.WriteLine ("Your secret word is " + shownWord);
                     Console.WriteLine ("Please input just one letter per try");
@@ -52,6 +55,12 @@ namespace TestProject {
                 Console.Clear ();
                 Console.WriteLine ("Your secret word is " + shownWord);
             }
+            //----------------------------------------------------// 
+
+            //------------------------EXIT-PARAMETERS-------------// 
+            Console.WriteLine ("Game finished...");
+            Console.ReadKey ();
+            //----------------------------------------------------// 
         }
     }
 }
