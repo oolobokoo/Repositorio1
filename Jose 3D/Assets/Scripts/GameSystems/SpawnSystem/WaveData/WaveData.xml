@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Waves>
+  <WaveData startTime="5" timer="5" timeDelta="-0.5">
+    <enemies>
+      <enemy>cube</enemy>
+      <enemy>sphere</enemy>
+      <enemy>cube</enemy>
+      <enemy>cube</enemy>
+    </enemies>
+  </WaveData>
+  <WaveData startTime="0.5" timer="1.5" timeDelta="1">
+    <enemies>
+      <enemy>sphere</enemy>
+      <enemy>sphere</enemy>
+      <enemy>cube</enemy>
+    </enemies>
+  </WaveData>
+  <WaveData startTime="0.5" timer="0.5" timeDelta="-0.1">
+    <enemies>
+      <enemy>cube</enemy>
+      <enemy>cube</enemy>
+      <enemy>cube</enemy>
+    </enemies>
+  </WaveData>
+</Waves>
